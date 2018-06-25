@@ -5,11 +5,12 @@ import {MenuItem} from "./menu-item.model"
   selector: 'mt-menu-item',
   templateUrl: './menu-item.component.html'
 })
+
 export class MenuItemComponent implements OnInit {
 
 
   @Input() menuItem: MenuItem
-  @Input() add = new EventEmitter()
+  @Output() add = new EventEmitter()
 
 
   constructor() { }
