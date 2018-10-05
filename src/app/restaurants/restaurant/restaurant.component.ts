@@ -1,6 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { trigger, state, style, transition, animate} from '@angular/animations';
-import {Restaurant} from './restaurant.model'
+import {Restaurant} from './restaurant.model';
 @Component({
   selector: 'mt-restaurant',
   templateUrl: './restaurant.component.html',
@@ -17,7 +17,7 @@ import {Restaurant} from './restaurant.model'
 })
 export class RestaurantComponent implements OnInit {
 
-  RestaurantState = 'ready'
+  restaurantState = 'ready'
 
   @Input() restaurant: Restaurant
 
@@ -25,5 +25,7 @@ export class RestaurantComponent implements OnInit {
 
   ngOnInit() {
   }
+
+  
 
 }
